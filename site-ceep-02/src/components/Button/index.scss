@@ -1,0 +1,21 @@
+.button {
+  background-color: #f6f1d1;
+  border: none;
+  border-radius: 2px;
+  outline: none;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  height: 1.5rem;
+
+  padding: 0.25rem 0.5rem;
+
+  cursor: pointer;
+
+  &.finished {
+    background-color: #46494c;
+    color: #f6f1d1;
+  }
+
+  &:hover {
+    filter: brightness(80%);
+  }
+}

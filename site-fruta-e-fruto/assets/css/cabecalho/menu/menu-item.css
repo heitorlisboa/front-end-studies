@@ -1,0 +1,13 @@
+.menu__item {
+    padding: .5rem;
+
+    text-transform: lowercase;
+}
+
+.menu__item:hover {
+    text-decoration: underline;
+}
+
+.menu__item:first-child {
+    font-weight: 700;
+}

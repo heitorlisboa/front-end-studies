@@ -1,0 +1,21 @@
+.task {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #f6f1d1;
+  display: flex;
+  justify-content: space-between;
+  margin: 0.5rem 0;
+  padding: 1rem 3rem;
+
+  &__buttons {
+    display: flex;
+    gap: 5px;
+    align-self: flex-end;
+  }
+
+  &.finished {
+    .task__content {
+      text-decoration: line-through;
+      filter: brightness(50%);
+    }
+  }
+}

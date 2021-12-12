@@ -1,0 +1,46 @@
+// ** Imports **
+
+@use "../variables" as var;
+@use "../mix-ins" as mx;
+@use "../placeholder-selectors";
+
+// ** About **
+
+.about {
+  &__header {
+    @extend %article-header;
+  }
+
+  &__title {
+    @extend %article-title;
+  }
+
+  &__body {
+    @extend %border;
+  }
+
+  &__img--main {
+    @extend %article-img--main;
+  }
+
+  &__intro {
+    font-size: var.$medium-fs;
+    text-align: center;
+
+    margin: 0 10% 1rem;
+  }
+
+  &__content {
+    @extend %article-content;
+    @extend %clearfix;
+  }
+
+  &__text {
+    @extend %article-text;
+  }
+
+  &__img--content {
+    @extend %article-img--content;
+    @include mx.article-img--content(left);
+  }
+}

@@ -1,0 +1,15 @@
+.lista-notas {
+  display: flex;
+  flex-flow: row wrap;
+  column-gap: 2rem;
+  row-gap: 1rem;
+  background-color: var(--white);
+  padding: 1rem 1.5rem;
+  box-shadow: var(--box-shadow);
+}
+
+.lista-notas__item {
+  flex: 1;
+  min-width: 250px;
+  width: 400px;
+}

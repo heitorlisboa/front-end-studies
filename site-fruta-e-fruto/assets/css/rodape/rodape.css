@@ -1,0 +1,8 @@
+.rodape {
+    display: flex;
+    flex-flow: row nowrap;
+
+    padding: .5rem 1rem;
+
+    background-color: var(--cinza-claro);
+}

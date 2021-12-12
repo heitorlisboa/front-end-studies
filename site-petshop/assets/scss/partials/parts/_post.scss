@@ -1,0 +1,96 @@
+// ** Imports **
+
+@use "../variables" as var;
+@use "../mix-ins" as mx;
+@use "../placeholder-selectors";
+
+// ** Blog post **
+
+.post {
+  &__header {
+    @extend %article-header;
+  }
+
+  &__title {
+    @extend %article-title;
+  }
+
+  &__subtitle {
+    @extend %article-subtitle;
+    
+    margin-bottom: 1rem;
+  }
+
+  &__date {
+    @extend %article-date;
+  }
+
+  &__tag {
+    @extend %article-tag;
+  }
+
+  &__body {
+    @extend %border;
+
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+  
+    width: 100%;
+  }
+
+  &__content {
+    @extend %article-content;
+
+    &--description {
+      @extend .post__content;
+
+      margin-bottom: 1rem;
+    }
+  }
+
+  &__img--main {
+    @extend %article-img--main;
+  }
+
+  &__text {
+    @extend %article-text;
+  }
+
+  &__btn {
+    color: var.$purple;
+    background-color: var.$yellow;
+
+    padding: .5rem 1rem;
+    margin-bottom: calc(var.$margin-vertical-content - .5rem);
+
+    border-radius: 4px;
+
+    transition: color, background-color .3s;
+
+    &:hover {
+      color: var.$yellow;
+      background-color: var.$purple;
+    }
+  }
+
+  &__info {
+    display: flex;
+    justify-content: space-between;
+
+    width: 100%;
+    
+    padding: .5rem 1.5rem;
+
+    border-top: 1px solid var.$light-gray;
+  }
+
+  // Empty ruleset
+  // &__author {}
+
+  &__comments {
+    &:hover {
+      @extend %hover;
+    }
+  }
+}

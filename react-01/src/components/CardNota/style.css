@@ -1,0 +1,38 @@
+.card-nota {
+  display: flex;
+  flex-flow: column;
+  background-color: var(--clr-primary);
+  color: white;
+  padding: .75rem;
+  border-radius: 5px;
+}
+
+.card-nota__header {
+  margin-bottom: 1rem;
+}
+.card-nota__titulo,
+.card-nota__subtitulo {
+  font-weight: bold;
+}
+
+.card-nota__titulo {
+  font-size: 1.4rem;
+  margin-bottom: .5rem;
+}
+
+.card-nota__subtitulo {
+  font-size: 1.1rem;
+}
+
+.card-nota__conteudo {
+
+}
+
+.card-nota__btn-deletar {
+  align-self: flex-end;
+  margin-top: auto;
+}
+
+.card-nota__btn-deletar:hover {
+  cursor: pointer;
+}

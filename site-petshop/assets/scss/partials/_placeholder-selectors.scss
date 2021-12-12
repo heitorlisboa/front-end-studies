@@ -1,0 +1,113 @@
+// ** Imports **
+
+@use "variables" as var;
+@use "mix-ins" as mx;
+
+// ** Placeholder selectors **
+
+// Generic
+
+%border {
+  border: 1px solid var.$light-gray;
+}
+
+%clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+%container {
+  max-width: 1000px;
+  
+  padding: 1rem 6%;
+  margin: 0 auto;
+
+  @include mx.for-desktop-only {
+    padding: 1rem 0;
+  }
+}
+
+%hover {
+  color: var.$purple;
+  text-decoration: underline;
+}
+
+%image-cover {
+  object-fit: cover;
+  object-position: center;
+
+  width: 100%;
+}
+
+// Specific
+
+%article-header {
+  background-color: var.$light-gray;
+
+  padding: 1rem 0;
+}
+
+%article-title {
+  font-size: var.$default-title-fs;
+  text-align: center;
+
+  margin-bottom: .25rem;
+
+  & a:hover {
+  color: var.$purple;
+  }
+}
+
+%article-subtitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+
+  font-size: var.$small-fs;
+}
+
+%article-date {
+  margin-right: .5rem;
+  font-style: italic;
+}
+
+%article-tag {
+  color: var.$purple;
+
+  padding: .25rem;
+  
+  border: 1px solid var.$purple;
+  border-radius: 4px;
+}
+
+%article-img--main {
+  width: 100%;
+
+  margin-bottom: var.$margin-vertical-content;
+}
+
+%article-content {
+  text-align: justify;
+  line-height: 1.5;
+
+  margin: 0 var.$margin-horizontal-text var.$margin-vertical-content;
+
+  &::first-letter {
+  font-size: var.$big-fs;
+  font-weight: bold;
+  float: left;
+  line-height: 1;
+  }
+}
+
+%article-text {
+  &:not(:last-of-type) {
+  margin-bottom: var.$margin-bottom-text;;
+  }
+}
+
+%article-img--content {
+  width: 45%;
+}

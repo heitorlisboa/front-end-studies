@@ -1,0 +1,41 @@
+// ** Imports **
+
+@use "variables" as var;
+
+// ** General mix-ins **
+
+@mixin article-img--content($float-side) {
+  float: $float-side;
+  @if $float-side == left {
+    margin-right: .5rem;
+  } @else if $float-side == right {
+    margin-left: .5rem;
+  }
+
+}
+
+// ** Responsive mix-ins **
+
+@mixin for-phone-only {
+  @media screen and (max-width: var.$tablet-start - 1px) {
+    @content;
+  }
+}
+
+@mixin for-tablet-only {
+  @media screen and (min-width: var.$tablet-start) and (max-width: var.$desktop-start - 1px) {
+    @content;
+  }
+}
+
+@mixin for-mobile-only { // Includes both phone and tablet
+  @media screen and (max-width: var.$desktop-start - 1px) {
+    @content;
+  }
+}
+
+@mixin for-desktop-only {
+  @media screen and (min-width: var.$desktop-start) {
+    @content;
+  }
+}

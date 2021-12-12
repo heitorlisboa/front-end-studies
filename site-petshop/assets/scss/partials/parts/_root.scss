@@ -1,0 +1,12 @@
+// ** Imports **
+
+@use "../variables" as var;
+@use "../mix-ins" as mx;
+@use "../placeholder-selectors";
+
+// ** Root **
+
+:root {
+  font-family: var.$default-ff;
+  color: var.$dark-gray;
+}

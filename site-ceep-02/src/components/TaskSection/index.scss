@@ -1,0 +1,11 @@
+.task-section {
+  background-color: rgba(255, 255, 255, 0.1);
+
+  padding: .5rem;
+  margin-top: 1rem;
+
+  &__date {
+    color: #f6f1d1;
+    text-transform: uppercase;
+  }
+}

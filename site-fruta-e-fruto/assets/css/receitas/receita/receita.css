@@ -1,0 +1,12 @@
+.receita {
+    display: flex;
+    flex-flow: column;
+
+    flex: 1 0 26%;
+
+    min-width: 200px;
+
+    margin: 1rem .5rem;
+
+    background-color: var(--branco);
+}

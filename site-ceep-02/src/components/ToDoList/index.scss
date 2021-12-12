@@ -1,0 +1,68 @@
+.todo-list {
+  font-family: "Space Mono", monospace;
+
+  background-color: #0b2027;
+  border-radius: 15px;
+
+  width: 600px;
+  min-height: 350px;
+  padding: 1rem;
+  margin: 1.5rem;
+
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
+}
+
+.title {
+  font-family: "BioRhyme", serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #f6f1d1;
+  line-height: initial;
+
+  margin: 1rem 0;
+
+  border-bottom: 1px solid rgba(246, 241, 209, 0.5);
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+
+  &__input,
+  &__button {
+    font-size: 0.75rem;
+
+    padding: 0.75rem;
+
+    border-radius: 0;
+  }
+
+  &__input {
+    background-color: #f6f1d1;
+    border-color: rgba(255, 255, 255, 0.1);
+
+    outline: none;
+  }
+
+  &__button {
+    text-transform: uppercase;
+
+    background: #f6f1d1;
+    border: 1px;
+
+    cursor: pointer;
+
+    &:hover {
+      color: #f6f1d1;
+
+      background: rgba(246, 241, 209, 0.1);
+    }
+  }
+}
+
+.list {
+  width: 100%;
+  padding: 0;
+}

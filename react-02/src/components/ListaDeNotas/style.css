@@ -1,0 +1,12 @@
+.lista-notas {
+  display: flex;
+  flex-flow: row wrap;
+  column-gap: 2rem;
+  row-gap: 1rem;
+}
+
+.lista-notas__item {
+  flex: 1;
+  min-width: 250px;
+  width: 400px;
+}

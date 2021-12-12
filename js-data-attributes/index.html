@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Data Attributes</title>
+</head>
+<body>
+    <div class="container">
+        <div class="abas">
+            <button class="ativa" data-aba="entrar">Entrar</button>
+            <button data-aba="cadastrar">Cadastrar</button>
+        </div>
+        <div class="conteudo">
+            <form class="form" data-conteudo="entrar">
+                <input type="text" name="email" placeholder="Seu e-mail">
+                <input type="password" name="senha" placeholder="Sua senha">
+                <button>Entrar</button>
+            </form>
+            <form class="form hide" data-conteudo="cadastrar">
+                <input type="text" name="email" placeholder="Seu e-mail">
+                <input type="password" name="senha" placeholder="Sua senha">
+                <input type="password" name="senha-confirmacao" placeholder="Repita sua senha">
+                <button>Cadastrar</button>
+            </form>
+        </div>
+    </div>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+/* .populares {
+
+} */
+
+.populares__itens + .populares__itens /* Categoria */ {
+  margin-top: 2rem;
+}
+
+.populares__info /* Informações da categoria */ {
+  margin-bottom: 1rem;
+  
+  border-bottom: 1px solid var(--cinza-suave);
+}
+
+.populares__cabecalho /* Informações da categoria (dentro de .populares__info) */ {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+
+  padding-bottom: .25rem;
+}
+
+.populares__titulo /* Título da categoria */ {
+  font-weight: normal;
+}
+
+.populares__icone /* Ícone da categoria */ {
+  margin-right: .25rem;
+}
+
+.populares__botao /* Botão 'Visualizar todos' da categoria */ {
+  background-color: transparent;
+  border: none;
+}
+
+.populares__conteudo /* Conteúdo da categoria */ {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-rows: auto;
+  gap: .5rem;
+}
+
+.populares__card /* App dentro da categoria */ {
+  background-color: var(--branco-suave);
+
+  border: 1px solid var(--cinza-suave);
+
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, .1);
+}
+
+.populares__card___imagem /* Imagem do app */ {
+  width: 100%;
+  height: 125px;
+
+  object-fit: cover;
+}
+
+.populares__card___corpo /* Corpo do app */ {
+  padding: .5rem;
+}
+
+.populares__card___cabecalho /* Cabeçalho do app */ {
+  margin-bottom: .5rem;
+}
+
+.populares__card___titulo /* Título do app */ {
+  font-weight: var(--fw-app-title);
+  font-size: var(--fs-app-title);
+  line-height: normal;
+}
+.populares__card___data /* Data de lançamento do app */ {
+  color: var(--fonte-cinza-claro);
+}
+
+.populares__card___descricao /* Descrição do app */ {
+  font-size: var(--fs-app-desc);
+  text-align: justify;
+}

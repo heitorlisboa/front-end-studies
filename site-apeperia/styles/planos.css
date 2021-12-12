@@ -1,0 +1,135 @@
+.planos {
+    background-color: var(--cinza-claro);
+
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.planos__titulo {
+    font-family: var(--fonte-titulo);
+    font-size: 1.5rem;
+    font-weight: 700;
+    
+    text-transform: uppercase;
+    text-align: center;
+    
+    color: var(--fonte-cinza);
+
+    margin-bottom: 1.5rem;
+}
+
+.planos__cartoes {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.cartao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    font-family: var(--fonte-cartoes);
+    
+    width: 80%;
+    max-width: 400px;
+    
+    background-color: var(--branco);
+
+    border-radius: 5px;
+
+    box-shadow: 0 0 15px -5px rgba(0, 0, 0, .25);
+
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+
+    margin: 1rem 0;
+}
+
+.cartao__titulo {
+    font-weight: 700;
+    font-size: 1.5rem;
+    align-self: stretch;
+
+    text-align: center;
+
+    border-bottom: 2px solid var(--cinza-claro);
+
+    padding-bottom: .5rem;
+}
+
+.cartao__conteudo {
+    margin-top: .5rem;
+
+    width: 70%;
+}
+
+.cartao__preco {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+
+    text-align: center;
+}
+
+.cartao__texto {
+    color: var(--fonte-cinza);
+    margin-bottom: .5rem;
+}
+
+.cartao__botao {
+    font-size: 1.2rem;
+    font-weight: 700;
+
+    padding: .75rem 0;
+
+    margin-top: 1.5rem;
+    margin-bottom: .5rem;
+}
+
+.cartao--start .cartao__titulo,
+.cartao--start .cartao__preco,
+.cartao--start .cartao__botao {
+    color: var(--planos-cartao-start);
+}
+
+.cartao__botao--start {
+    border-color: var(--planos-cartao-start);;
+}
+
+.cartao--ultra .cartao__titulo,
+.cartao--ultra .cartao__preco,
+.cartao--ultra .cartao__botao {
+    color: var(--planos-cartao-ultra);
+}
+
+.cartao__botao--ultra {
+    border-color: var(--planos-cartao-ultra);;
+}
+
+.cartao--mega .cartao__titulo,
+.cartao--mega .cartao__preco,
+.cartao--mega .cartao__botao {
+    color: var(--planos-cartao-mega);
+}
+
+.cartao__botao--mega {
+    border-color: var(--planos-cartao-mega);;
+}
+
+@media screen and (min-width: 1024px) {
+    .planos__cartoes {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: flex-end;
+        justify-content: space-evenly;
+
+        max-width: 1024px;
+
+        margin: 0 auto;
+    }
+
+    .cartao {
+        max-width: 290px;
+    }
+}

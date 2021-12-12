@@ -1,0 +1,12 @@
+.receita__conteudo {
+    display: flex;
+    flex-flow: column;
+
+    flex: 1;
+
+    border: 1px rgba(128, 128, 128, 0.5) solid;
+    border-top: none;
+    border-radius: 1px;
+
+    padding: 1rem;
+}

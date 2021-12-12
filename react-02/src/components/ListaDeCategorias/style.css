@@ -1,0 +1,32 @@
+.categorias {
+  display: grid;
+  grid-template-columns: 1fr 150px;
+  gap: 20px;
+}
+
+.categorias__lista {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(125px, 1fr));
+  gap: 10px;
+}
+
+.categorias__item {
+  padding: .5rem;
+  margin: auto;
+
+  color: var(--white);
+  background-color: var(--clr-dark);
+  border-radius: 10px;
+
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.categorias__input {
+  display: block;
+  width: 100%;
+  height: 1.75rem;
+
+  padding: .25rem;
+  border: 1px solid rgba(0, 0, 0, .3);
+}

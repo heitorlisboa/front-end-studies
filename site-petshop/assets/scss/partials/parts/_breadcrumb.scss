@@ -1,0 +1,27 @@
+// ** Imports **
+
+@use "../variables" as var;
+@use "../mix-ins" as mx;
+@use "../placeholder-selectors";
+
+// ** Breadcrumb **
+
+.breadcrumb {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+  
+    font-size: var.$small-fs;
+  
+    &__link {
+      padding: .5rem .25rem;
+  
+      &:hover {
+        @extend %hover;
+      }
+    }
+  
+    &__arrow {
+      width: 1em;
+    }
+  }

@@ -1,0 +1,28 @@
+.banner {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: center;
+    
+    box-sizing: border-box;
+
+    background: url('../../img/banner.jpg') center/cover no-repeat;
+}
+
+@media screen and (min-width: 0) {
+    .banner {
+        height: calc(100vh - 166px);
+    }
+}
+
+@media screen and (min-width: 375px) {
+    .banner {
+        height: calc(100vh - 131px);
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .banner {
+        height: calc(100vh - 88px);
+    }
+}

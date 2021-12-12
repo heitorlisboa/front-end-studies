@@ -1,0 +1,47 @@
+.cabecalho {
+  display: flex;
+  align-items: center;
+
+  position: sticky;
+  top: 0px;
+
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+
+  background-color: var(--branco-suave);
+
+  border-bottom: 1px solid var(--cinza-suave);
+
+  box-shadow: 5px 0 10px rgba(0, 0, 0, .1);
+}
+
+/* .menu {
+
+} */
+
+.menu__lista {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
+}
+
+.menu__item {
+  display: block;
+}
+
+.menu__link {
+  display: block;
+
+  font-size: 1.2rem;
+  
+  padding: calc(.25rem + 3px) .5rem;
+}
+
+.menu__item + .menu__item .menu__link {
+  margin-left: .5rem;
+}
+
+.menu__link:hover, .menu__link.ativo {
+  padding-bottom: .25rem;
+  border-bottom: 3px solid lightskyblue;
+}

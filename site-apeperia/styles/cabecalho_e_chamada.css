@@ -1,0 +1,10 @@
+.cabecalho_e_chamada {
+    background-color: var(--bg-chamada-mobile);
+}
+
+@media screen and (min-width: 1024px) {
+    .cabecalho_e_chamada {
+        background-image: url(../img/bg-intro.jpg);
+        background-size: cover;
+    }
+}

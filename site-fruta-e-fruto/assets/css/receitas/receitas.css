@@ -1,0 +1,7 @@
+.receitas {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+
+    background-color: var(--cinza-claro);
+}

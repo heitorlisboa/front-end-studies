@@ -1,0 +1,74 @@
+:root {
+  --clr-primary: firebrick;
+  --clr-secondary: rgb(253, 253, 253);
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.container {
+  width: 600px;
+  height: 600px;
+
+  border: 2px solid firebrick;
+}
+
+.abas {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+
+  border-bottom: 2px solid var(--clr-primary);
+}
+
+.abas button {
+  color: var(--clr-primary);
+  background-color: var(--clr-secondary);
+
+  font-size: 1.25em;
+  font-weight: bold;
+  text-transform: uppercase;
+
+  padding: .5rem;
+
+  transition: color, background 300ms;
+}
+
+.abas .ativa {
+  color: var(--clr-secondary);
+  background-color: var(--clr-primary);
+}
+
+.conteudo {
+  background-color: var(--clr-secondary);
+
+  padding: 1rem;
+}
+
+.form {
+  display: flex;
+  flex-flow: column;
+}
+
+.form input, .form button {
+  font-size: 1.1em;
+
+  padding: .5rem;
+}
+
+.form input {
+  border: 2px solid var(--clr-primary);
+}
+
+.form button {
+  color: var(--clr-secondary);
+  background-color: var(--clr-primary);
+}
+
+.hide {
+  display: none;
+}
